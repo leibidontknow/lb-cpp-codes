@@ -3,10 +3,21 @@ using namespace std;
 int n,a[1919810];
 int xorsum;
 int dfs(int x){
-    if(x==1)    return 1;
-    if(x==0)    return 0;
-    if(x&1) return (x+1)/2;
-    return dfs(x/2-1);
+    int res=0;
+    if(x%2==0){
+        res++;
+        while(x%2==0){
+            x/=2;
+        }
+    }
+    for(int i=3;i*i<=x;i++){
+        while(x%i==0){
+            res++;
+            x/=i;
+        }
+    }
+    if(x>1) res++;
+    return res;
 }
 int main(){
     cin>>n;
