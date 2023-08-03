@@ -16,6 +16,7 @@ signed main(){
     }
     l=r=1;
     q[r++]=0;
+    q[r++]=0;
     for(int i=1;i<=n;i++){
         ds[i]=dp[i-1]-sum[i];
         while(l<r&&ds[q[r-1]]<ds[i])    r--;
