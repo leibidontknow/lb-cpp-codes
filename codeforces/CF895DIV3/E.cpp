@@ -1,0 +1,12 @@
+/*************************************************************************
+	> File Name: E.cpp
+	> Author: lbdontknow
+	> Mail: lbdontknow@163.com 
+	> God bless no BUG 
+ ************************************************************************/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	return 0;
+}
